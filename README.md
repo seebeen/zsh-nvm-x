@@ -6,19 +6,6 @@ Repository: **https://github.com/seebeen/zsh-nvm-x**
 
 ---
 
-## Credits
-
-This project is a fork/rework of the original [`zsh-nvm`](https://github.com/lukechilds/zsh-nvm) by **Luke Childs**.
-
-- Original author: **Luke Childs**
-- Original repo: https://github.com/lukechilds/zsh-nvm
-- Fork maintainer: **Sibin Grasic** <sibin.grasic@oblak.studio>
-- Fork repo: https://github.com/seebeen/zsh-nvm-x
-
-Huge thanks to Luke for the original work.
-
----
-
 ## Features
 
 - Installs `nvm` automatically if missing
@@ -33,9 +20,8 @@ Huge thanks to Luke for the original work.
 ## Installation
 
 > [!IMPORTANT]
-> In all examples below, set plugin options **before** loading the plugin.
-> Plugin managers should load `zsh-nvm-x` only after the `export ...` lines.
-> Exact initialization flow differs between managers, so keep options in your shell init file before manager/plugin bootstrap.
+> Set `NVM_*` options before loading `zsh-nvm-x`.
+> With plugin managers, place your `export ...` lines in shell init before plugin bootstrap.
 
 ### Manual (git clone)
 
@@ -158,11 +144,7 @@ export NVM_AUTO_USE=true
 
 ## Configuration options
 
-Set these before loading `zsh-nvm-x`.
-
-> [!TIP]
-> If you use a plugin manager, place these exports near the top of your `~/.zshrc`
-> (or equivalent), before the manager initializes plugins.
+Set these before loading `zsh-nvm-x` (typically near the top of your `~/.zshrc` or equivalent).
 
 | Option                         | Default      | Description                                                                                   |
 | ------------------------------ | ------------ | --------------------------------------------------------------------------------------------- |
@@ -302,6 +284,19 @@ Useful targets:
 - `make test-smoke` – run smoke tests from `test/smoke/`
 
 CI is configured in `.github/workflows/test.yml` and runs the same test pipeline on Ubuntu and macOS.
+
+---
+
+## Credits
+
+This project is a fork/rework of the original [`zsh-nvm`](https://github.com/lukechilds/zsh-nvm) by **Luke Childs**.
+
+- Original author: **Luke Childs**
+- Original repo: https://github.com/lukechilds/zsh-nvm
+- Fork maintainer: **Sibin Grasic** <sibin.grasic@oblak.studio>
+- Fork repo: https://github.com/seebeen/zsh-nvm-x
+
+Huge thanks to Luke for the original work.
 
 ---
 

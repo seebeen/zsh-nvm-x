@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+# Keep shell and config files explicitly LF
+*.sh text eol=lf
+*.zsh text eol=lf
+*.md text eol=lf
+Makefile text eol=lf

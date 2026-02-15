@@ -1,0 +1,17 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+
+# Common swap/backup files
+*.swp
+*.swo
+*~
+
+# Local environment files
+.env
+.env.*
+
+# Test and runtime leftovers
+*.log
+*.tmp
+*.bak
