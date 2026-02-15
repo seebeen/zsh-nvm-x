@@ -7,6 +7,11 @@ Describe 'lazy loading'
     source "$SHELLSPEC_PROJECT_ROOT/lib/zsh-nvm-x-state.zsh"
     source "$SHELLSPEC_PROJECT_ROOT/lib/zsh-nvm-x-core.zsh"
     source "$SHELLSPEC_PROJECT_ROOT/lib/zsh-nvm-x-lazy.zsh"
+
+    # Keep tests deterministic regardless of host-level yarn availability.
+    _zsh_nvm_x_has() {
+      return 1
+    }
   }
 
   BeforeEach 'setup'
