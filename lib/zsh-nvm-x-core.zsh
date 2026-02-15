@@ -1,7 +1,7 @@
 _zsh_nvm_x_rename_function() {
-  declare -f "$1" > /dev/null 2>&1 || return
-  eval "${_/$1/$2}"
-  unset -f $1
+  (( ${+functions[$1]} )) || return
+  functions[$2]="${functions[$1]}"
+  unset -f -- "$1"
 }
 
 _zsh_nvm_x_has() {
